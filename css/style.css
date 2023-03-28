@@ -161,7 +161,7 @@ z-index:999;
   }
 }
 .img-main-visual {
-  height:50vh;
+  height:100vw;
   width:550px;
   position:absolute;
   top:40%;
@@ -183,9 +183,10 @@ z-index:999;
 .deep-text {
   overflow: hidden;/* はみ出た分を非表示 */
   position:absolute;
-  top:60%;
+  top:55%;
   left:50%;
-  height:25vh;
+  width:37vw;
+  max-width:300px;
   object-fit:cover;
   transform:translate(-50%,-50%);
   z-index:10;
@@ -195,10 +196,11 @@ z-index:999;
   animation-delay:1.7s;
 }
 .phrase-text {
-  height:7vh;
+  width:45vw;
+  max-width:400px;
   position:absolute;
   object-fit:cover;
-  top:26%;
+  top:35%;
   left:50%;
   transform:translate(-50%,-50%);
   transition:all 1s ease;
@@ -220,22 +222,25 @@ z-index:999;
   }
 }
 .zukei-big {
-  height:50vh;
+  width:70vw;
+  max-width:550px;
   left:50%;
   object-fit:cover;
   transition:all 1s ease;
   animation: fadeIn 1s both;
 }
 .zukei-medium {
-  height:5vh;
-  top:108%;
+  width:5vw;
+  max-width:70px;
+  top:85%;
   right:27%;
   transition:all 1s ease;
   animation: fadeIn 1s both;
 }
 .zukei-short {
-  height:3vh;
-  top:119%;
+  width:3vw;
+  max-width:40px;
+  top:93%;
   right:30%;
   transition:all 1s ease;
   animation: fadeIn 1s both;
@@ -274,6 +279,8 @@ z-index:999;
   transition:all 1s ease;
   animation:moveLeft 2s both;
   animation-delay:2.4s;
+  width:80vw;
+  max-width:500px;
 }
 .tree-right {
   position:absolute;
@@ -281,6 +288,8 @@ z-index:999;
   transition:all 1s ease;
   animation:moveRight 2s both;
   animation-delay:2.4s;
+  width:80vw;
+  max-width:500px;
 }
 .main-text {
   position:absolute;
@@ -295,7 +304,7 @@ z-index:999;
 	opacity:0;
 }
 .main-text h1 {
-  font-size:36px;
+  font-size:min(3.3vw,36px);
   font-weight:bold;
 }
 .main-text p{
@@ -352,14 +361,15 @@ z-index:999;
   font-family: oswald, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size:40px;
+  font-size:min(5.3vw,36px);
 }
 .happy-text::before {
   content: "";
   position: absolute;
   left: 0%;
   width: 100%;
-  height: 30px;
+  height: 40%;
+  max-height:30px;
   z-index: -1;
   opacity:0;
   bottom:-15%;
@@ -410,7 +420,8 @@ z-index:999;
   padding:5px 40px;
   border-radius:2.5em;
   letter-spacing:2px;
-  width:400px;
+  width:60vw;
+  max-width:400px;
   transition:all 1s ease;
   animation: popup 1s both;
   animation-delay:2.8s;
@@ -428,10 +439,12 @@ z-index:999;
   align-items:center;
   justify-content:center;
   height:65px;
+  font-size:min(2.8vw,16px);
 }
 .button-train-img {
-  width:80px;
-  height:80px;
+  width:14vw;
+  max-width:80px;
+  max-height:80px;
 }
 .triangle {
   position:absolute;
@@ -490,7 +503,7 @@ z-index:999;
 .reason-content {
   text-align:center;
   line-height:2.7;
-  font-size:21px;
+  font-size:min(2vw,21px);
   letter-spacing:1.5px;
   font-weight:bold;
   position:relative;
@@ -526,6 +539,7 @@ z-index:999;
 }
 .senro-img {
   width: 50vw;
+  max-width:600px;
   object-fit: cover;
   position: absolute;
   top: 73%;
@@ -534,16 +548,18 @@ z-index:999;
 }
 .group1-img {
   width: 30vw;
+  max-width:300px;
   animation-delay:.8s;
 }
 .group1 {
   position: absolute;
-  top: 12%;
+  top: 30%;
   left: -3%;
   z-index: 0;
 }
 .group2-img {
   width:30vw;
+  max-width:300px;
   position:absolute;
   top:45%;
   right:-7%;
@@ -555,10 +571,7 @@ z-index:999;
 }
 .happygenic-container {
   width:90%;
-  margin:40px auto;
-}
-.happygenic-img {
-  margin:40px 0;
+  margin:0px auto;
 }
 .happygenic-img img{
   width:60%;
@@ -574,7 +587,8 @@ z-index:999;
 .swiper-slide img {
   width: 100%;
   object-fit: cover;
-  height: 500px;
+  height: 40vw;
+  max-height:500px;
   border-radius:10%;
 }
 .swiper-slide span {
@@ -584,6 +598,7 @@ z-index:999;
   font-family: vdl-megag, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size:min(1.6vw,12px);
 }
 .spot-title {
   display:flex;
@@ -595,7 +610,7 @@ z-index:999;
   height:30px;
 }
 .spot-title h2 {
-  font-size:24px;
+  font-size:min(2vw,24px);
   font-family: vdl-megag, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -791,7 +806,7 @@ z-index:999;
   margin:60px 0;
 }
 iframe {
-  height:70vh;
+  height:70vw;
 }
 .gallery {
   width:85%;
